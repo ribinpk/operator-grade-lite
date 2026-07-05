@@ -1,0 +1,53 @@
+.oc-status { display: inline-flex; align-items: center; gap: var(--primitive-space-2); }
+.oc-status__label {
+  font-family: var(--primitive-font-family-mono);
+  font-size: var(--primitive-font-size-sm);
+  text-transform: uppercase;
+  letter-spacing: var(--primitive-font-tracking-caps);
+  color: var(--semantic-color-text-secondary);
+}
+.oc-status__mark {
+  inline-size: var(--primitive-size-status-mark);
+  block-size: var(--primitive-size-status-mark);
+  flex: none;
+  background: currentColor;
+  position: relative;
+}
+.oc-status__mark[data-shape='square'] { border-radius: var(--primitive-radius-sm); }
+.oc-status__mark[data-shape='circle'] { border-radius: 50%; }
+.oc-status__mark[data-shape='rectangle'] {
+  block-size: var(--primitive-size-status-mark-rect);
+  border-radius: var(--primitive-radius-sm);
+}
+.oc-status__mark[data-shape='diamond'] { rotate: 45deg; border-radius: var(--primitive-radius-sm); }
+.oc-status__mark[data-shape='triangle'],
+.oc-status__mark[data-shape='triangle-alert'] {
+  background: currentColor;
+  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+  display: grid;
+  place-items: center;
+}
+.oc-status__mark[data-shape='quatrefoil'] {
+  background: transparent;
+  inline-size: calc(var(--primitive-size-status-mark) / 2);
+  block-size: calc(var(--primitive-size-status-mark) / 2);
+  margin: calc(var(--primitive-size-status-mark) / 4);
+  border-radius: 50%;
+  box-shadow:
+    calc(var(--primitive-size-status-mark) / -4) 0 0 currentColor,
+    calc(var(--primitive-size-status-mark) / 4) 0 0 currentColor,
+    0 calc(var(--primitive-size-status-mark) / -4) 0 currentColor,
+    0 calc(var(--primitive-size-status-mark) / 4) 0 currentColor;
+}
+.oc-status__glyph {
+  align-self: end;
+  margin-block-end: calc(var(--primitive-size-status-mark) / 8);
+  font-family: var(--primitive-font-family-mono);
+  font-size: calc(var(--primitive-size-status-mark) / 2);
+  font-weight: var(--primitive-font-weight-semibold);
+  line-height: 1;
+  color: var(--semantic-color-surface-base);
+}
+.oc-status[data-pulse] .oc-status__mark { animation: oc-pulse var(--primitive-motion-duration-pulse) var(--primitive-motion-ease-mechanical) infinite; }
+@keyframes oc-pulse { 50% { opacity: var(--primitive-opacity-pulse-dim); } }
+@media (prefers-reduced-motion: reduce) { .oc-status[data-pulse] .oc-status__mark { animation: none; } }

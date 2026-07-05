@@ -1,0 +1,23 @@
+Operator-Grade Lite Evaluation License
+
+Copyright (c) 2026 Operator-Grade
+
+This Lite kit is provided for evaluation and personal, non-commercial use only.
+
+You MAY:
+- View, download, and run this code to evaluate the Operator-Grade design system.
+- Use it in personal, non-production experiments.
+
+You MAY NOT:
+- Use this code, in whole or in part, in any commercial or production product.
+- Redistribute, resell, sublicense, or republish it.
+- Remove or alter this notice.
+
+Commercial use requires a paid Operator-Grade license.
+See https://operator-grade.design/#pricing
+
+The underlying third-party primitives (React, Radix, shadcn/ui) remain under their
+own MIT licenses. This license covers only the original Operator-Grade source in
+this repository.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.

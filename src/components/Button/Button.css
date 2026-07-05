@@ -1,0 +1,51 @@
+.oc-btn {
+  --_h: var(--primitive-size-control-md);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--primitive-space-2);
+  block-size: var(--_h);
+  padding-inline: var(--primitive-space-4);
+  border: 1px solid var(--semantic-color-border-strong);
+  border-radius: var(--primitive-radius-md);
+  background: var(--semantic-color-surface-input);
+  color: var(--semantic-color-text-primary);
+  font-family: var(--primitive-font-family-sans);
+  font-size: var(--primitive-font-size-md);
+  font-weight: var(--primitive-font-weight-medium);
+  line-height: 1;
+  cursor: pointer;
+  user-select: none;
+  transition: background var(--primitive-motion-duration-fast) var(--primitive-motion-ease-mechanical),
+    border-color var(--primitive-motion-duration-fast) var(--primitive-motion-ease-mechanical);
+}
+.oc-btn[data-size='sm'] { --_h: var(--primitive-size-control-sm); font-size: var(--primitive-font-size-sm); padding-inline: var(--primitive-space-3); }
+.oc-btn[data-size='lg'] { --_h: var(--primitive-size-control-lg); padding-inline: var(--primitive-space-5); }
+.oc-btn:hover { background: var(--semantic-color-surface-card); }
+.oc-btn:focus-visible { outline: var(--primitive-focus-width) solid var(--semantic-color-focus-ring); outline-offset: var(--primitive-focus-offset); }
+.oc-btn:active { translate: 0 1px; }
+.oc-btn[disabled] { opacity: 0.4; cursor: not-allowed; }
+
+.oc-btn[data-intent='primary'] {
+  background: var(--semantic-color-action-primary);
+  border-color: var(--semantic-color-action-primary);
+  color: var(--semantic-color-surface-base);
+  font-weight: var(--primitive-font-weight-semibold);
+}
+.oc-btn[data-intent='primary']:hover { background: var(--semantic-color-action-primary-hover); border-color: var(--semantic-color-action-primary-hover); }
+
+.oc-btn[data-intent='danger'] {
+  background: transparent;
+  border-color: var(--semantic-color-status-critical);
+  color: var(--semantic-color-status-critical);
+}
+.oc-btn[data-intent='danger']:hover { background: color-mix(in srgb, var(--semantic-color-status-critical) 14%, transparent); }
+
+.oc-btn__spinner {
+  inline-size: var(--primitive-space-3); block-size: var(--primitive-space-3); flex: none;
+  border: var(--primitive-border-width-thick) solid currentColor; border-inline-end-color: transparent;
+  border-radius: 50%;
+  animation: oc-spin 0.6s linear infinite;
+}
+@keyframes oc-spin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .oc-btn__spinner { animation-duration: 1.5s; } }

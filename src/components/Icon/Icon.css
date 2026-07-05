@@ -1,0 +1,13 @@
+.oc-icon {
+  display: inline-block;
+  flex: none;
+  inline-size: var(--primitive-size-icon-sm);
+  block-size: var(--primitive-size-icon-sm);
+  stroke-width: var(--primitive-icon-stroke-width);
+  vertical-align: text-bottom;
+  color: currentColor;
+}
+.oc-icon[data-size='md'] {
+  inline-size: var(--primitive-size-icon-md);
+  block-size: var(--primitive-size-icon-md);
+}
