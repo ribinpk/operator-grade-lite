@@ -2,37 +2,79 @@
   "semantic": {
     "color": {
       "surface": {
-        "base":   { "$value": "#050608", "$type": "color" },
-        "raised": { "$value": "#0A0C10", "$type": "color" },
-        "card":   { "$value": "#0F1217", "$type": "color" },
-        "input":  { "$value": "#161A20", "$type": "color" }
+        "base": {
+          "$value": "#050608",
+          "$type": "color"
+        },
+        "raised": {
+          "$value": "#0A0C10",
+          "$type": "color"
+        },
+        "card": {
+          "$value": "#0F1217",
+          "$type": "color"
+        },
+        "input": {
+          "$value": "#161A20",
+          "$type": "color"
+        }
       },
       "text": {
-        "primary":   { "$value": "#C2D1B8", "$type": "color" },
-        "secondary": { "$value": "#8A9A82", "$type": "color" },
-        "muted":     { "$value": "#566150", "$type": "color" }
+        "primary": {
+          "$value": "#C2D1B8",
+          "$type": "color"
+        },
+        "secondary": {
+          "$value": "#8A9A82",
+          "$type": "color"
+        },
+        "muted": {
+          "$value": "#566150",
+          "$type": "color"
+        }
       },
       "action": {
-        "primary":       { "$value": "#4F8F6A", "$type": "color" },
-        "primary-hover": { "$value": "#6BA784", "$type": "color" }
+        "primary": {
+          "$value": "#4F8F6A",
+          "$type": "color"
+        },
+        "primary-hover": {
+          "$value": "#6BA784",
+          "$type": "color"
+        }
       },
       "threat": {
-        "hostile":  { "$value": "#C25A4A", "$type": "color" },
-        "friendly": { "$value": "#5E8FA8", "$type": "color" },
-        "neutral":  { "$value": "#5C9E7A", "$type": "color" },
-        "unknown":  { "$value": "#B89A52", "$type": "color" }
+        "hostile": {
+          "$value": "#C25A4A",
+          "$type": "color"
+        },
+        "friendly": {
+          "$value": "#5E8FA8",
+          "$type": "color"
+        },
+        "neutral": {
+          "$value": "#5C9E7A",
+          "$type": "color"
+        },
+        "unknown": {
+          "$value": "#B89A52",
+          "$type": "color"
+        }
       },
       "status": {
-        "nominal":  { "$value": "#5C9E7A", "$type": "color" },
-        "caution":  { "$value": "#B89A52", "$type": "color" },
-        "critical": { "$value": "#C25A4A", "$type": "color" }
+        "nominal": {
+          "$value": "#5C9E7A",
+          "$type": "color"
+        },
+        "caution": {
+          "$value": "#B89A52",
+          "$type": "color"
+        },
+        "critical": {
+          "$value": "#C25A4A",
+          "$type": "color"
+        }
       }
-    },
-    "elevation": {
-      "0": { "$value": "inset 0 0 0 1px rgba(255,255,255,0.05), 0 0 0 1px rgba(0,0,0,0.6)", "$type": "shadow" },
-      "1": { "$value": "inset 0 0 0 1px rgba(255,255,255,0.05), 0 1px 2px rgba(0,0,0,0.6)", "$type": "shadow" },
-      "2": { "$value": "inset 0 0 0 1px rgba(255,255,255,0.05), 0 4px 8px rgba(0,0,0,0.7)", "$type": "shadow" },
-      "3": { "$value": "inset 0 0 0 1px rgba(255,255,255,0.05), 0 12px 32px rgba(0,0,0,0.8)", "$type": "shadow" }
     }
   }
 }
