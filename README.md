@@ -2,7 +2,9 @@
 
 The free evaluation slice of [Operator-Grade](https://operator-grade.design), a tactical and critical-systems design system for defense, security and critical-infrastructure interfaces.
 
-![Operator-Grade, three modes](https://operator-grade.design/og-cover.png)
+![Operator-Grade demo cycling Day, Night-NVG and Mono modes](assets/mode-cycle.gif)
+
+*The [live demo](https://demo.operator-grade.design), cycling Day / Night-NVG / Mono. Note the affiliation shapes: meaning survives the monochrome mode.*
 
 ## What's in this Lite kit
 
